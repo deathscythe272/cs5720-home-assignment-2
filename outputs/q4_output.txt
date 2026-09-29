@@ -1,0 +1,31 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790648176.986988   16776 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790648178.407423   16776 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\jeffr\Documents\cs5720-home-assignment-2\home_assignment_2.py:392: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()                            # no-op under Agg; shows inline in notebooks
+I0000 00:00:1790648180.324883   16776 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+==============================================================================
+Q4 Task 1: Sobel edge detection with OpenCV
+==============================================================================
+Image shape: (256, 256), dtype uint8
+Saved figure: ./outputs\q4_sobel.png
+
+==============================================================================
+Q4 Task 2: 2x2 max pooling and average pooling with Keras
+==============================================================================
+Original 4x4:
+ [[6. 3. 7. 4.]
+ [6. 9. 2. 6.]
+ [7. 4. 3. 7.]
+ [7. 2. 5. 4.]]
+
+2x2 max pooled (2x2):
+ [[9. 7.]
+ [7. 7.]]
+
+2x2 average pooled (2x2):
+ [[6.   4.75]
+ [5.   4.75]]
